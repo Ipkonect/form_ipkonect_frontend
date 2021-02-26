@@ -85,7 +85,7 @@ function FORM({ history }) {
                     <p className="error">{error}</p>
                     <ReCAPTCHA
                         className="recaptcha"
-                        sitekey="6Ld2IF8aAAAAAJynBYXa8rixjsn4Y0atwNlA2grL"
+                        sitekey="6LedFF8aAAAAACF7VzQUr2IjkCeFaasuHJA4Uj_x"
                         onChange={onChange}
                     />
                     <p className="politic_and_terms_user">Ao se registrar, você aceita nossos <a href="https://ipkonect.com.br/user_terms.html" target="_blank">termos de uso</a> e a nossa <a href="https://ipkonect.com.br/privacity_politic.html" target="_blank">política de privacidade</a>.</p>
