@@ -16,13 +16,14 @@ function FORM({ history }) {
     const [name, set_name] = useState('');
     const [number, set_number] = useState('');
     const [error, set_error] = useState('');
+    const [captcha, set_captcha] = useState('');
 
     const email_ref = useRef(null);
     const name_ref = useRef(null);
     const number_ref = useRef(null);
 
     function onChange(value) {
-        console.log('Captcha value:', value);
+      set_captcha(value)
     }
 
     async function handle_register(e) {
@@ -33,6 +34,12 @@ function FORM({ history }) {
         email_ref.current.style.border = 'none';
         name_ref.current.style.border = 'none';
         number_ref.current.style.border = 'none';
+        
+         if(!captcha){
+            set_error('Captcha invalido.');
+            return;
+        }
+      
 
         if(email_ref.current.value === ''){
             email_ref.current.style.border = '1px solid #FF0000';
