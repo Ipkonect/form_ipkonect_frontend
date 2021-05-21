@@ -85,7 +85,7 @@ function FORM({ history }) {
                     <img src={ipkonect_logo} width="200px" />
                 </div>
                 <form>
-                    <h1>Se cadastre</h1>
+                    <h1>Cadastre-se</h1>
                     <input ref={email_ref} className="input_email" placeholder="Seu E-mail" onChange={e => set_email(e.target.value)} />
                     <input ref={name_ref} className="input_name" placeholder="Seu nome" onChange={e => set_name(e.target.value)} />
                     <InputMask ref={number_ref} mask="(99) 9999-9999" className="input_phone" placeholder="Seu número" onChange={e => set_number(e.target.value)} />;
