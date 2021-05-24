@@ -75,7 +75,7 @@ function FORM({ history }) {
                     <h1>Se cadastre</h1>
                     <input ref={email_ref} className="input_email" placeholder="Seu E-mail" onChange={e => set_email(e.target.value)} />
                     <input ref={name_ref} className="input_name" placeholder="Seu nome" onChange={e => set_name(e.target.value)} />
-                    <InputMask ref={number_ref} mask="(99) 9999-9999" className="input_phone" placeholder="Seu número" onChange={e => set_number(e.target.value)} />;
+                    <InputMask ref={number_ref} mask="(99) 9999-99999" className="input_phone" placeholder="Seu número" onChange={e => set_number(e.target.value)} />;
                     <p className="error">{error}</p>
                     <p className="politic_and_terms_user">Ao se registrar, você aceita nossos <a href="https://ipkonect.com.br/user_terms.html" target="_blank">termos de uso</a> e a nossa <a href="https://ipkonect.com.br/privacity_politic.html" target="_blank">política de privacidade</a>.</p>
                     <button className="button_register" onClick={handle_register}>CADASTRAR</button>
