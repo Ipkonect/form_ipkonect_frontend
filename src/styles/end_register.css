@@ -12,3 +12,17 @@
     color: #FFF;
     font-size: 25px;
 }
+
+.end_register_container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #32CD32;
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}

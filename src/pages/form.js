@@ -23,7 +23,7 @@ function FORM({ history }) {
     const number_ref = useRef(null);
 
     function onChange(value) {
-      set_captcha(value)
+        set_captcha(value)
     }
 
     async function handle_register(e) {
@@ -34,12 +34,8 @@ function FORM({ history }) {
         email_ref.current.style.border = 'none';
         name_ref.current.style.border = 'none';
         number_ref.current.style.border = 'none';
+
         
-         if(!captcha){
-            set_error('Captcha invalido.');
-            return;
-        }
-      
 
         if(email_ref.current.value === ''){
             email_ref.current.style.border = '1px solid #FF0000';
@@ -85,14 +81,14 @@ function FORM({ history }) {
                     <img src={ipkonect_logo} width="200px" />
                 </div>
                 <form>
-                    <h1>Cadastre-se</h1>
+                    <h1>Se cadastre</h1>
                     <input ref={email_ref} className="input_email" placeholder="Seu E-mail" onChange={e => set_email(e.target.value)} />
                     <input ref={name_ref} className="input_name" placeholder="Seu nome" onChange={e => set_name(e.target.value)} />
                     <InputMask ref={number_ref} mask="(99) 9999-9999" className="input_phone" placeholder="Seu número" onChange={e => set_number(e.target.value)} />;
                     <p className="error">{error}</p>
                     <ReCAPTCHA
                         className="recaptcha"
-                        sitekey="6LedFF8aAAAAACF7VzQUr2IjkCeFaasuHJA4Uj_x"
+                        sitekey="6Ld2IF8aAAAAAJynBYXa8rixjsn4Y0atwNlA2grL"
                         onChange={onChange}
                     />
                     <p className="politic_and_terms_user">Ao se registrar, você aceita nossos <a href="https://ipkonect.com.br/user_terms.html" target="_blank">termos de uso</a> e a nossa <a href="https://ipkonect.com.br/privacity_politic.html" target="_blank">política de privacidade</a>.</p>
